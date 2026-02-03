@@ -29,7 +29,8 @@ class CourseAdmin(admin.ModelAdmin):
 # ✅ Task 2: Question admin shows choices on same page
 class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
-    list_display = ('question_text', 'course', 'grade')
+    list_display = ('content', 'course', 'grade')
+
 
 
 class LessonAdmin(admin.ModelAdmin):
